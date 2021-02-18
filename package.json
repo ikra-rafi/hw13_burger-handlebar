@@ -4,7 +4,8 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
@@ -15,5 +16,13 @@
   },
   "devDependencies": {
     "handlebars-helper-css": "^0.1.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ikra-rafi/hw13_burger-handlebar.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ikra-rafi/hw13_burger-handlebar/issues"
+  },
+  "homepage": "https://github.com/ikra-rafi/hw13_burger-handlebar#readme"
 }
