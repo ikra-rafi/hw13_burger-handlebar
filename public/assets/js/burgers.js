@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
       button.addEventListener('click', (e) => {
         // Grabs the id of the element that goes by the name, "id"
         const id = e.target.getAttribute('data-id');
-        const newDevour = e.target.getAttribute('data-newsleep');
+        const newDevour = e.target.getAttribute('data-newdevour');
 
         const newDevourState = {
           devoured: newDevour,
@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
       // Grabs the value of the textarea that goes by the name, "quote"
       const newBurger = {
-        burger_name: document.getElementById('ca').value.trim(),
+        burger_name: document.getElementById('bu').value.trim(),
         // sleepy: document.getElementById('sleepy').checked,
         devoured: false
       };
@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         body: JSON.stringify(newCat),
       }).then(() => {
         // Empty the form
-        document.getElementById('ca').value = '';
+        document.getElementById('bu').value = '';
 
         // Reload the page so the user can see the new quote
         // console.log('Created a new cat!');
