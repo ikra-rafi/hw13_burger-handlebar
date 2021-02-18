@@ -1,11 +1,11 @@
-<h1>Burgers!</h1>
+<h1>Eat-Da-Burger!</h1>
 
-<h2>Cats that are not sleepy!</h2>
+<h2>What would you like to eat?</h2>
 
 <ul>
   {{#each burgers}}
   {{#unless devoured}}
-  {{> burgers/burgers-block sleep=true}}
+  {{> burgers/burgers-block devoured=true}}
   {{/unless}}
   {{/each}}
 </ul>
@@ -15,12 +15,12 @@
 <ul>
   {{#each burgers}}
   {{#if devoured}}
-  {{> burgers/burgers-block sleep=false}}
+  {{> burgers/burgers-block devoured=false}}
   {{/if}}
   {{/each}}
 </ul>
 
-<h2>Add a Cat</h2>
+<h2>Add a Burger</h2>
 <form id="create-form">
 
   <div class="form-group">
